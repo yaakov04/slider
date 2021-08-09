@@ -38,6 +38,13 @@ const anteriror = () => {
 
 }
 
+const automatico = () => {
+    setInterval(() => {
+        siguiente();
+    }, 2000);
+}
+automatico();
+
 btnSiguiente.addEventListener('click', siguiente);
 btnAnterior.addEventListener('click', anteriror)
 
